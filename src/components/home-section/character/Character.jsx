@@ -30,6 +30,7 @@ import {
 } from "../../../assets/images";
 import React, { useState } from "react";
 import Modal from "react-modal";
+import bg_2 from "../../../assets/vidio/bg-2.png";
 
 const Character = (props) => {
   const [modalIRudysOpen, setModalIsRudyOpen] = useState(false);
@@ -53,7 +54,7 @@ const Character = (props) => {
         playsinline="playsinline"
         loop="loop"
         className="video"
-        src="https://sgimage.netmarble.com/mobile/game/tskgb/brand/v1/videos/f9abe5915e9f.mp4"
+        src={bg_2}
       />
       <div className="content">
         <h4 className="title main-color">캐릭터</h4>

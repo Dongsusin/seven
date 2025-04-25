@@ -1,6 +1,7 @@
 import "./credit.scss";
 import HomeSection from "../HomeSection";
 import { title, seven } from "../../../assets/images";
+import bg_1 from "../../../assets/vidio/bg-1.png";
 
 const Credit = (props) => {
   return (
@@ -11,7 +12,7 @@ const Credit = (props) => {
         playsinline="playsinline"
         loop="loop"
         className="video"
-        src="https://sgimage.netmarble.com/images/netmarble/COMMON/20241004/wthf1728003738293.mp4"
+        src={bg_1}
       />
       <div className="content">
         <img src={title} alt="" />
