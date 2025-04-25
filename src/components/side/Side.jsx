@@ -21,7 +21,13 @@ const Side = () => {
   }, []);
   return (
     <div className="side">
-      <audio id="myAudio" loop="loop" src={sound} controls></audio>
+      <audio
+        id="myAudio"
+        loop="loop"
+        autoPlay="autoplay"
+        src={sound}
+        controls
+      ></audio>
       <button id="playBtn"></button>
       <button id="pauseBtn"></button>
     </div>
