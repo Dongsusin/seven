@@ -1,6 +1,6 @@
 # 🐣 세븐아이츠 사전예약 사이트
 
-**🚀 배포 링크**: [클론 사이트 바로가기](https://stalwart-granita-3bb4c2.netlify.app/)
+**🚀 배포 링크**: [사이트 바로가기](https://stalwart-granita-3bb4c2.netlify.app/)
 
 React를 이용하여 만들어본 세븐나이츠 사전예약 페이지입니다.
 
