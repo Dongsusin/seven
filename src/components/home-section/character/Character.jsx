@@ -30,7 +30,7 @@ import {
 } from "../../../assets/images";
 import React, { useState } from "react";
 import Modal from "react-modal";
-import bg_2 from "../../../assets/vidio/bg-2.png";
+import bg_2 from "../../../assets/vidio/bg-2.mp4";
 
 const Character = (props) => {
   const [modalIRudysOpen, setModalIsRudyOpen] = useState(false);

@@ -1,7 +1,7 @@
 import "./credit.scss";
 import HomeSection from "../HomeSection";
 import { title, seven } from "../../../assets/images";
-import bg_1 from "../../../assets/vidio/bg-1.png";
+import bg_1 from "../../../assets/vidio/bg-1.mp4";
 
 const Credit = (props) => {
   return (
