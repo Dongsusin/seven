@@ -27,6 +27,7 @@ const Side = () => {
       pauseBtn.style.display = "none";
     });
     setinit();
+    setInterval(setinit, 1000);
   }, []);
   return (
     <div className="side">
