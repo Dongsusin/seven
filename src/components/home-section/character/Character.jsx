@@ -492,6 +492,21 @@ const Character = (props) => {
                 <br />
               </p>
             </div>
+            <div className="movie">
+              <div className="movie-text">스킬영상</div>
+              <div className="movie-video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/uyU-r8nh0sA?si=PMbTpKUjNrhL_Qlt"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
           </div>
           <div className="close" onClick={() => setModalIschrisOpen(false)} />
         </div>
