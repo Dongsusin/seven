@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./side.scss";
 import sound from "../../assets/sound/사운드.mp3";
-import { music } from "../../assets/images";
 
 const Side = () => {
   useEffect(() => {
