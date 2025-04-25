@@ -1,6 +1,7 @@
 import logo from "./images/logo.png";
 import title from "./images/title.png";
 import seven from "./images/seven.png";
+import music from "./images/뮤직.png";
 //루디
 import rudy from "./images/캐릭터/루디.png";
 import rudy_large from "./images/캐릭터/루디_large.png";
@@ -45,6 +46,7 @@ export {
   logo,
   title,
   seven,
+  music,
   rudy,
   rudy_large,
   delon,
