@@ -7,6 +7,13 @@ const Side = () => {
     const audio = document.getElementById("myAudio");
     const playBtn = document.getElementById("playBtn");
     const pauseBtn = document.getElementById("pauseBtn");
+    if (audio.paused) {
+      playBtn.style.display = "block";
+      pauseBtn.style.display = "none";
+    } else {
+      playBtn.style.display = "none";
+      pauseBtn.style.display = "block";
+    }
     playBtn.addEventListener("click", () => {
       audio.play();
       playBtn.style.display = "none";
