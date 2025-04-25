@@ -36,7 +36,7 @@
       text-transform: uppercase;
       position: relative;
       pointer-events: visible;
-
+      color: white;
       &::before,
       &::after {
         content: "";
@@ -46,17 +46,17 @@
         background-color: $main-color;
         transition: width 0.3s ease;
       }
-
+      &:hover {
+        color: #fed169;
+      }
       &:hover::before,
       &:hover::after {
         width: 50%;
       }
-
       &::before {
         left: 0;
         top: 0;
       }
-
       &::after {
         right: 0;
         bottom: 0;
