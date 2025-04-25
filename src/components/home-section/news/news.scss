@@ -1,0 +1,168 @@
+@use "../../../scss/" as *;
+
+.news {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../../assets/images/bg-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 50px;
+  .title {
+    width: 100%;
+    height: auto;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .slider__wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+  }
+  .slider__img {
+    /*이미지가 보이는 영역*/
+    position: relative;
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+  }
+  .slider__inner {
+    /*이미지를 감싸고 있는 부모 : 움직이는 부분*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 10000px; /* 총 이미지 6개 */
+    height: 450px;
+    position: relative;
+    left: -800px;
+  }
+  .slider__inner.transition {
+    transition: all 0.3s;
+  }
+  .slider {
+    /*개별적인 이미지*/
+    position: relative;
+    width: 800px;
+    height: 450px;
+  }
+  .slider iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .slider span {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 5px 10px;
+  }
+  .slider__btn .prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    left: 20%;
+    background-image: url(../../../assets/images/버튼_이전.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .slider__btn .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    right: 20%;
+    background-image: url(../../../assets/images/버튼_다음.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .news {
+    .slider__btn .prev {
+      left: 22.5%;
+    }
+    .slider__btn .next {
+      right: 22.5%;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .news {
+    .slider__btn .prev {
+      left: 12.5%;
+    }
+    .slider__btn .next {
+      right: 12.5%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .news {
+    .slider__img {
+      width: 750px;
+    }
+    .slider__inner {
+      left: -750px;
+    }
+    .slider {
+      width: 750px;
+    }
+    .slider__btn .prev {
+      left: 5%;
+    }
+    .slider__btn .next {
+      right: 5%;
+    }
+  }
+}
+@media screen and (max-width: 426px) {
+  .news {
+    .slider__img {
+      width: 400px;
+    }
+    .slider__inner {
+      left: -400px;
+    }
+    .slider {
+      width: 400px;
+    }
+  }
+}
+@media screen and (max-width: 376px) {
+  .news {
+    .slider__img {
+      width: 370px;
+    }
+    .slider__inner {
+      left: -370px;
+    }
+    .slider {
+      width: 370px;
+    }
+  }
+}
+@media screen and (max-width: 321px) {
+  .news {
+    .slider__img {
+      width: 300px;
+    }
+    .slider__inner {
+      left: -300px;
+    }
+    .slider {
+      width: 300px;
+    }
+  }
+}

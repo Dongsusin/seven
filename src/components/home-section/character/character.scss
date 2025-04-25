@@ -1,0 +1,324 @@
+@use "../../../scss/" as *;
+
+.character {
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
+  }
+  .content {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+  }
+  .title {
+    width: 100%;
+    height: auto;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .character-list {
+    width: 100%;
+    height: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+    .character-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: url("../../../assets/images/캐릭터/배경.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.05);
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      .character-image {
+        width: 95%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+.ReactModalPortal {
+  position: relative;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.ReactModal__Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 1000;
+}
+.ReactModal__Content {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: auto;
+  background-color: white;
+  z-index: 1001;
+}
+.modal-content {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../assets/images/bg-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+  }
+  .modal-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    z-index: 2000;
+    overflow-y: auto;
+    .modal-title {
+      font-size: 100px;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(319deg, #fff8de 10.13%, #fed169 85.79%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      .before {
+        background: url(../../../assets/images/캐릭터이름표before.png);
+      }
+      .after {
+        background: url(../../../assets/images/캐릭터이름표after.png);
+      }
+      .before,
+      .after {
+        content: "";
+        width: 290px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%, -50%);
+        bottom: -20px;
+      }
+    }
+    .modal-subtitle {
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      background: linear-gradient(319deg, #fff8de 10.13%, #fed169 85.79%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .modal-text {
+      background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0.15) 0%,
+          rgba(0, 0, 0, 0.15) 100%
+        ),
+        radial-gradient(
+            at top center,
+            rgba(255, 255, 255, 0.4) 0%,
+            rgba(0, 0, 0, 0.4) 120%
+          )
+          #989898;
+      background-blend-mode: multiply, multiply;
+      text-align: center;
+      width: 70%;
+      margin: 0 auto;
+      border-left: #fed169 solid 5px;
+      border-right: #fed169 solid 5px;
+      p {
+        padding: 5px;
+        width: auto;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        background-image: linear-gradient(to left, #e6e9f0 0%, #eef1f5 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+  .movie {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    .movie-text {
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(319deg, #fff8de 10.13%, #fed169 85.79%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .movie-video {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+      iframe {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url("../../../assets/images/닫기.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    z-index: 2000;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .character .character-list {
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(125px, 1fr));
+    margin-top: 0;
+  }
+  .modal-content {
+    .modal-description {
+      .modal-title {
+        font-size: 50px;
+        .before,
+        .after {
+          top: 10%;
+        }
+      }
+      .modal-subtitle {
+        font-size: 25px;
+        margin-bottom: 0;
+      }
+      .modal-text {
+        p {
+          margin-bottom: 0;
+        }
+      }
+      .movie {
+        .movie-video {
+          iframe {
+            height: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal-content {
+    .modal-description {
+      .modal-title {
+        font-size: 50px;
+        margin-bottom: 0;
+      }
+      .modal-subtitle {
+        font-size: 25px;
+        margin-bottom: 0;
+      }
+      .modal-text {
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 426px) {
+  .character .content {
+    padding-top: 75px;
+  }
+  .character .character-list {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(80px, 1fr));
+  }
+  .modal-content .modal-description {
+    width: 95%;
+    .modal-text {
+      width: 100%;
+      p {
+        font-size: 12.5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 376px) {
+  .character .character-list {
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(70px, 1fr));
+  }
+}
+@media screen and (max-width: 321px) {
+  .character .content {
+    padding-top: 125px;
+  }
+}
