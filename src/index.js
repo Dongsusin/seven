@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             text-align: center; z-index: 1000;
         `;
     popup.innerHTML = `
-            <p>본 사이트는 상업적 이용을 목적으로 한 것이 아니며,<br> 순수하게 포트폴리오 용도로 제작된 것입니다.</p>
+            <p style="color=black">본 사이트는 상업적 이용을 목적으로 한 것이 아니며,<br> 순수하게 포트폴리오 용도로 제작된 것입니다.</p>
             <div style="display: flex; justify-content: center; align-items: center;  margin-top: 4px; flex-direction: column;">
               <label style="display: block; cursor: pointer; width: 100%;">
                 <input type="checkbox" style="margin-right: 5px;" id="noShowToday">
