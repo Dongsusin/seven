@@ -95,6 +95,18 @@ const News = (props) => {
                 <iframe
                   width="560"
                   height="315"
+                  src="https://www.youtube.com/embed/IF0mdYumfcg?si=aFHNjkIDz0ngDKTj"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="slider">
+                <iframe
+                  width="560"
+                  height="315"
                   src="https://www.youtube.com/embed/fZ_jbFwMG_E?si=R6PZmpUgWPoEJO7x"
                   title="YouTube video player"
                   frameborder="0"
@@ -191,7 +203,7 @@ const News = (props) => {
                 <iframe
                   width="560"
                   height="315"
-                  src="https://www.youtube.com/embed/IF0mdYumfcg?si=aFHNjkIDz0ngDKTj"
+                  src="https://www.youtube.com/embed/BSnst2Kj7q0?si=LSjqp1Em2rM1qvvm"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
