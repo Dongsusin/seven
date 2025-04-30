@@ -141,6 +141,7 @@ const characterGroups = [
       subtitle: "준음의 군주",
       description: `죽음의 힘을 다루는 세븐나이츠 중 한 명. 교활한 두뇌와
       강력한 힘으로 아스드 대륙에 피바람을 일으킨다. 그가 대륙을 혼란에 빠뜨리는 목적이 무엇인지 밝혀지지 않았다.`,
+      video: "https://www.youtube.com/embed/_61N2S7MV30?si=ibkQVW_m_McEGLA5",
       img: images.delon,
       largeImg: images.delon_large,
     },
