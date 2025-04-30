@@ -204,6 +204,7 @@ const characterGroups = [
       description: `드래곤들의 인정을 받은 제이브는 드넓은 
       용의 유적지 전체를 지키는 군주이자 수호신이 되었다.
       막강한 드래곤들이 모여있는 그의 군세는 강력한 힘이 있다.`,
+      video: "https://www.youtube.com/embed/xST7BL3NoYM?si=WrTGJBoOn86o41-7",
       img: images.jaeb,
       largeImg: images.jaeb_large,
     },
