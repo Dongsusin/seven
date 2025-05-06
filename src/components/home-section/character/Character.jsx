@@ -173,6 +173,7 @@ const characterGroups = [
       description: `바네사는 시간의 틈 속에서 마법을 연구한 끝에
       대마법사의 경지에 올랐다. 하지만 본래 시간으로   
       돌아왔을 때는 이미 십수 년이 지난 후였다.`,
+      video: "https://www.youtube.com/embed/etB--_9ChFw?si=d7LcOosMRxkhAb2L",
       img: images.vanessa,
       largeImg: images.vanessa_large,
     },
