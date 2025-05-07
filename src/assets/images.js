@@ -67,6 +67,12 @@ import ace_large from "./images/캐릭터/에이스_large.png";
 //로지
 import logi from "./images/캐릭터/로지.png";
 import logi_large from "./images/캐릭터/로지_large.png";
+//카론
+import karon from "./images/캐릭터/카론.png";
+import karon_large from "./images/캐릭터/카론_large.png";
+//파이
+import pai from "./images/캐릭터/파이.png";
+import pai_large from "./images/캐릭터/파이_large.png";
 
 export {
   logo,
@@ -116,4 +122,8 @@ export {
   ace_large,
   logi,
   logi_large,
+  karon,
+  karon_large,
+  pai,
+  pai_large,
 };

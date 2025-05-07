@@ -253,6 +253,25 @@ const characterGroups = [
       img: images.ace,
       largeImg: images.ace_large,
     },
+    {
+      id: "karon",
+      name: "카론",
+      subtitle: "자연의 주인",
+      description: `신비의 숲을 다스리는 루디,
+      그리고 에반과도 알고 지내는 사이며, 
+      가끔 고블린 같은 몬스터의 습격에 도움을 받기도 한다.`,
+      img: images.karon,
+      largeImg: images.karon_large,
+    },
+    {
+      id: "pai",
+      name: "파이",
+      subtitle: "사막의 화염",
+      description: `엘프를 중심으로 한 인간 연합과 수인이 
+      남부 사막 지역의 패권을 두고 전쟁을 벌이던 고대 시대의 여기사이자 아그니아의 영주. `,
+      img: images.pai,
+      largeImg: images.pai_large,
+    },
   ],
 ];
 
