@@ -240,6 +240,7 @@ const characterGroups = [
       description: `실베스타는 한때 뛰어난 전투 능력과 정의감으로 백성들의
       신뢰를 한 몸에 받는 빛의 기사였다. 하지만 파괴의 힘에 대해
       알게 된 후, 그 힘을 봉인하기 위한 모험을 시작했다.`,
+      video: "https://www.youtube.com/embed/Dzh374FOvpY?si=vNW02vt9we-kQpc0",
       img: images.silvesta,
       largeImg: images.silvesta_large,
     },
