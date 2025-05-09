@@ -210,17 +210,6 @@ const characterGroups = [
       img: images.jaeb,
       largeImg: images.jaeb_large,
     },
-    {
-      id: "logi",
-      name: "로지",
-      subtitle: "은둔한 성기사",
-      description: `로지는 아주 오래전 존재했던 스카이트리아 제국의
-      명문가 중 하나였던 실버소드 가문의 장녀이자 여기사였다.
-      장남인 레디샌즈보다 훨씬 뛰어난 능력을 가지고 있으나
-      앞에 나서는 것을 좋아하지 않아 수련에만 전념했다..`,
-      img: images.logi,
-      largeImg: images.logi_large,
-    },
   ],
   [
     {
@@ -251,6 +240,7 @@ const characterGroups = [
       description: `에이스가 총운검의 목소리에 응하자 수많은 적들이 단칼에
       쓰러졌다. 총운검의 목소리를 듣는 자는 그 검에 인정받은
       진정한 주인뿐. 그 주인에게만 무시무시한 힘을 빌려준다.`,
+      video: "https://www.youtube.com/embed/ibfSpdseLRE?si=4j9ji_tVbbexXUjI",
       img: images.ace,
       largeImg: images.ace_large,
     },
@@ -272,6 +262,17 @@ const characterGroups = [
       남부 사막 지역의 패권을 두고 전쟁을 벌이던 고대 시대의 여기사이자 아그니아의 영주. `,
       img: images.pai,
       largeImg: images.pai_large,
+    },
+    {
+      id: "logi",
+      name: "로지",
+      subtitle: "은둔한 성기사",
+      description: `로지는 아주 오래전 존재했던 스카이트리아 제국의
+      명문가 중 하나였던 실버소드 가문의 장녀이자 여기사였다.
+      장남인 레디샌즈보다 훨씬 뛰어난 능력을 가지고 있으나
+      앞에 나서는 것을 좋아하지 않아 수련에만 전념했다..`,
+      img: images.logi,
+      largeImg: images.logi_large,
     },
   ],
 ];
