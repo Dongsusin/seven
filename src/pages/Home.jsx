@@ -9,7 +9,9 @@ const swiperOptions = {
   slidesPerView: 1,
   spaceBetween: 0,
   mousewheel: true,
-  pagination: true,
+  pagination: {
+    clickable: true, // 클릭 가능하도록 설정
+  },
   effect: "fade",
   speed: 1000,
 };
